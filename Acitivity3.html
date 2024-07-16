@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3</title>
+</head>
+<body>
+    <script>
+        // Comparision Operators
+        // Task 8
+        let num1 = 10;
+        let num2 = 20;
+
+        let greator = num1 > num2;
+
+        console.log(greator);
+
+        let less = num1 < num2;
+        console.log(less);
+    </script>
+
+    <script>
+        // Task 9
+
+        function greatorThan(a, b){
+            return a >= b;
+        }
+        console.log(`using >= ${greatorThan(10,5)}`);
+
+        function lessThan(a, b){
+            return a <= b;
+        }
+        console.log(`using <= ${lessThan(10,5)}`);
+
+    </script>
+
+    <script>
+        let int1 = 100;
+        let int2 = '100';
+        function comparision() {
+            return int1 == int2;
+        }
+        console.log(`== loose comparision---> ${comparision()}`)
+
+        function strictComparision() {
+            return int1 === int2;
+        }
+        console.log(`=== strict comparision---> ${strictComparision()}`)
+    </script>
+</body>
+</html>
