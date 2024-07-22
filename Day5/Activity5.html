@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOF</title>
+  </head>
+  <body>
+    <!-- <script>
+      function hof(func, n) {
+        for (let i = 0; i < n; i++) {
+          func();
+        }
+      }
+
+      let hello = () => {
+        console.log("Hello ");
+      };
+
+      hof(hello, 5);
+    </script> -->
+
+    <script>
+      function hof(f1, f2, a) {
+        const value = f1(a);
+        const result2 = f2(value);
+        return result2;
+      }
+      const addOne = (x) => {
+        return x + 1;
+      };
+      const double = (x) => {
+        return x * 2;
+      };
+
+      const finalResult = hof(addOne, double, 3);
+      console.log(finalResult);
+    </script>
+  </body>
+</html>

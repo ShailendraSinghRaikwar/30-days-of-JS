@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Expression</title>
+  </head>
+  <body>
+    <script>
+      let num1 = 1000;
+      let num2 = 200;
+
+      let findMax = function () {
+        let max = num1 > num2 ? `${num1} id maximux` : `${num2} is maximum`;
+        return max;
+      };
+      console.log(findMax());
+    </script>
+
+    <script>
+      let str1 = "Shail";
+      let str2 = "R";
+
+      let con = function () {
+        // let a = str1.concat(str2);
+        return str1.concat(str2);
+      };
+      console.log(con());
+    </script>
+  </body>
+</html>
