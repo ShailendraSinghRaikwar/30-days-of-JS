@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Map Method
+      let arr = [1, 2, 3, 4, 50];
+
+      let doubleArray = arr.map((i) => {
+        return i * 2;
+      });
+
+      //   console.log(arr);
+      console.log(doubleArray);
+    </script>
+
+    <script>
+      // Filter Method
+      let arr2 = [1, 2, 3, 4, 5, 6, 7, 10, 115, 166];
+      let newArray = [];
+
+      let filterEven = arr2.filter((x) => {
+        if (x % 2 == 0) {
+          newArray.push(x);
+        }
+      });
+
+      console.log(newArray);
+    </script>
+
+    <script>
+      // Reduce Method
+
+      let arr3 = [1, 2, 3, 4, 5];
+      let sum = 0;
+
+      let total = arr3.reduce((accumulator, currentValue) => {
+        return accumulator + currentValue;
+      });
+      console.log(total);
+    </script>
+
+    <script>
+      // Reduce Method
+
+      let arr4 = [1, 2, 3, 4, 5];
+
+      let add = (x, y) => {
+        return x + y;
+      };
+
+      let addReduce = arr4.reduce(add);
+      console.log(`Calculate sum using reduce method ${addReduce}`);
+    </script>
+  </body>
+</html>
