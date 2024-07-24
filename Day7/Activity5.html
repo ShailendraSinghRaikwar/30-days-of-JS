@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Iteration</title>
+  </head>
+  <body>
+    <script>
+      let book = {
+        title: "Automic Habits",
+        auther: "James Clear",
+        year: 2018,
+      };
+
+      //   Task 8
+      for (x in book) {
+        console.log(`Property ${x} & Value ${book[x]}`);
+      }
+
+      // Task 9
+
+      console.log(Object.keys(book));
+      console.log(Object.values(book));
+    </script>
+  </body>
+</html>

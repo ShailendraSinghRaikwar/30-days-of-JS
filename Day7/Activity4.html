@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>this Keyword</title>
+  </head>
+  <body>
+    <script>
+      let book = {
+        title: "Automic Habits",
+        auther: "James Clear",
+        year: 2018,
+        result: function () {
+          return `${this.title} , ${this.year}`;
+        },
+      };
+
+      console.log(book.result());
+    </script>
+  </body>
+</html>
