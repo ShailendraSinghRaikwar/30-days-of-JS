@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhance Object Literals</title>
+  </head>
+  <body>
+    <!-- <script>
+      let person = {
+        name: "Shail",
+        DOB: 1997,
+        updateDOB: function (d) {
+          person.DOB = d;
+        },
+      };
+      console.log(person.DOB);
+      console.log(person.updateDOB(1996));
+      console.log(person.DOB);
+    </script> -->
+
+    <script>
+      // Task 9 - Computed property or dynamic array
+
+      let fname = "firstName";
+      let lname = "lastName";
+
+      let employee = {
+        [fname]: "Shailendra",
+        [lname]: "Raikwar",
+        age: 28,
+        role: "Developer",
+      };
+
+      console.log(employee);
+    </script>
+  </body>
+</html>

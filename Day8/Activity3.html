@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spread and Rest operator</title>
+  </head>
+  <body>
+    <!-- <script>
+      let arr = [1, 2, 3, 4];
+
+      let arr2 = [9, 8, 7, ...arr];
+
+      console.log(arr2);
+    </script> -->
+
+    <script>
+      function sum(...arg) {
+        let add = 0;
+        for (let x of arg) {
+          add = add + x;
+        }
+        console.log(`clg ${add}`);
+        return add;
+      }
+      console.log(sum(1, 2, 3, 4, 5));
+    </script>
+  </body>
+</html>
