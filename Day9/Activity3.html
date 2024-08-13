@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Removing Element</title>
+  </head>
+  <body>
+    <div id="main">
+      <ul id="list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>React</li>
+        <li id="redux">Redux</li>
+      </ul>
+      <h3>This is h3</h3>
+    </div>
+
+    <script>
+      let ul = document.getElementById("list");
+      let lastElem = ul.lastElementChild.remove();
+    </script>
+
+    <!-- <script>
+      let ul = document.getElementById("main");
+      let h3 = document.querySelector("h3");
+      ul.removeChild(h3);
+    </script> -->
+  </body>
+</html>

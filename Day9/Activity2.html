@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating and Appending Elements</title>
+  </head>
+  <body id="main">
+    <!-- <script>
+      let div = document.createElement("div");
+      let h2 = document.createElement("h2");
+
+      h2.innerText = "this is some text";
+
+      let body = document.getElementById("main");
+      body.appendChild(div);
+      div.appendChild(h2);
+    </script> -->
+    <div>
+      <ul id="list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>React</li>
+        <li>Redux</li>
+      </ul>
+    </div>
+    <script>
+      let newLi = document.createElement("li");
+      newLi.innerText = "Testing";
+      let selectUl = document.getElementById("list");
+
+      selectUl.appendChild(newLi);
+    </script>
+  </body>
+</html>

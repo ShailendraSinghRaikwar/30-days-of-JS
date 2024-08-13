@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modifying Attributes and Classes</title>
+  </head>
+  <body>
+    <div id="main">
+      <ul id="list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>React</li>
+        <li id="redux">Redux</li>
+      </ul>
+      <h3 class="newh3">This is h3</h3>
+      <img
+        src="https://digishail.com/wp-content/uploads/2021/02/Digishail.png"
+      />
+    </div>
+
+    <script>
+      let imgLink =
+        "https://digishail.com/wp-content/uploads/2021/02/Web-Development-150x150.png";
+      let div = document.querySelector(".newh3");
+      div.setAttribute("src", imgLink);
+    </script>
+  </body>
+</html>

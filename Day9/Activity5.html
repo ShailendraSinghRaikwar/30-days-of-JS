@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling</title>
+    <style>
+      #myDiv {
+        border: thick solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myDiv">This is div</div>
+    <input type="button" value="Change" onclick="changeBorder()" />
+
+    <script>
+      function changeBorder() {
+        let h2 = document.getElementById("myDiv");
+        h2.style.borderColor = "red";
+      }
+    </script>
+
+    <!-- <p>Hello Dosto, Shail this side.</p>
+    <input type="button" onclick="buttonClick()" value="Click Me" />
+    <script>
+      function buttonClick() {
+        let p = document.querySelector("p");
+        p.innerText = "This is chnaged content";
+      }
+    </script> -->
+  </body>
+</html>

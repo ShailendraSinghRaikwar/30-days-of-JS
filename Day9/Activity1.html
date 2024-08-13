@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selecting and manuplating elements</title>
+  </head>
+  <body>
+    <script>
+      function operate() {
+        let h3 = document.getElementById("headingThree");
+        h3.innerText = "New H3 Heading";
+
+        let h1 = document.querySelector(".bg");
+        h1.style.backgroundColor = "blue";
+      }
+    </script>
+    <h3 id="headingThree">This is H3 heading</h3>
+    <input type="button" onclick="{operate()}" />
+    <h1 class="bg" ">
+      H1 for Background color change
+    </h1>
+  </body>
+</html>
